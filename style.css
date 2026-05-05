@@ -1,0 +1,66 @@
+body {
+	background-color: rgb(196, 218, 199);
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li a {
+	color: rgb(42, 50, 6);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.section-title {
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	font-weight: 400;
+	background-color: rgb(211, 211, 211);
+}
+
+.short-description {
+	color: rgb(0, 128, 0);
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+.detailed-description {
+	color: rgb(110, 41, 41);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.characteristics-list {
+	list-style-image: url('https://img.icons8.com/ios-filled/15/000000/star--v1.png');
+	background-color: rgb(245, 245, 245);
+	font-size: 15px;
+}
+
+.movie {
+	display: inline-block;
+	margin: 15px;
+	text-align: center;
+}
+
+#cart {
+	border: 1px solid #59882f;
+	padding: 15px;
+	margin-top: 30px;
+	border-radius: 5px;
+	background-color: #ab5f5f;
+}
+#cart-items {
+	list-style: none;
+	padding: 0;
+}
+#cart-items li {
+	margin-bottom: 8px;
+}
+#cart button {
+	margin-right: 10px;
+	padding: 5px 10px;
+}

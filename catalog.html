@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Каталог фильмов</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="catalog.html">Каталог фильмов</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr />
+		<main>
+			<h1>Каталог фильмов</h1>
+
+			<label for="genre-filter">Фильтр по жанру: </label>
+			<select id="genre-filter">
+				<option value="all">Все жанры</option>
+				<option value="comedy">Комедия</option>
+				<option value="thriller">Триллер</option>
+			</select>
+
+			<div class="movie" data-price="250" data-genre="comedy">
+				<a href="film1.html">
+					<img
+						src="https://s.afisha.ru/mediastorage/72/41/b2208a14939540239ea6d4bb4172.jpg"
+						alt="Постер фильма Сокровище Гномов"
+						width="200"
+						height="300"
+					/>
+				</a>
+				<p><a href="film1.html">Сокровища Гномов</a></p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+
+			<div class="movie" data-price="300" data-genre="thriller">
+				<a href="film2.html">
+					<img
+						src="https://www.kino-teatr.ru/movie/posters/big/2/0/176702.jpg"
+						alt="Постер фильма Затерянные"
+						width="200"
+						height="300"
+					/>
+				</a>
+				<p><a href="film2.html">Затерянные</a></p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+
+			<div class="movie" data-price="350" data-genre="thriller">
+				<a href="film3.html">
+					<img
+						src="https://n1s1.hsmedia.ru/50/3f/91/503f912d2a2901c5848bfd6b5e93f87f/1080x1350_0xe73SexYI_0496999424723586571.jpg"
+						alt="Постер фильма Офлайн 2"
+						width="200"
+						height="300"
+					/>
+				</a>
+				<p><a href="film3.html">Офлайн 2</a></p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div id="cart">
+				<h3>Корзина</h3>
+				<ul id="cart-items"></ul>
+				<div id="cart-total">Итого: 0 руб.</div>
+				<button id="checkout">Оплатить</button>
+				<button id="clear-cart">Очистить корзину</button>
+			</div>
+		</main>
+		<hr />
+		<footer>
+			<p>&copy; 2025 Онлайн-кинотеатр "Киногривый". Все права защищены.</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
