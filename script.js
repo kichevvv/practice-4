@@ -11,6 +11,7 @@ const calculateTotal = () => cart.reduce((sum, item) => sum + item.price, 0)
 const removeFromCart = index => {
 	cart.splice(index, 1)
 	renderCart()
+	saveCartToLocalStorage()
 }
 
 const renderCart = () => {
@@ -38,6 +39,7 @@ const renderCart = () => {
 const addToCart = product => {
 	cart.push(product)
 	renderCart()
+	saveCartToLocalStorage()
 }
 
 document.querySelectorAll('.add-to-cart').forEach(button => {
@@ -58,12 +60,14 @@ document.getElementById('checkout').addEventListener('click', () => {
 		alert('Покупка прошла успешно!')
 		cart = []
 		renderCart()
+		saveCartToLocalStorage()
 	}
 })
 
 document.getElementById('clear-cart').addEventListener('click', () => {
 	cart = []
 	renderCart()
+	saveCartToLocalStorage()
 })
 
 const filterMovies = () => {
