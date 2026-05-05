@@ -1,4 +1,10 @@
-let cart = []
+let cart = [];
+
+const savedCart = localStorage.getItem('cart');
+if (savedCart) {
+    cart = JSON.parse(savedCart);
+}
+renderCart();
 
 const calculateTotal = () => cart.reduce((sum, item) => sum + item.price, 0)
 
@@ -73,3 +79,7 @@ const filterMovies = () => {
 }
 
 document.getElementById('genre-filter').addEventListener('change', filterMovies)
+
+const saveCartToLocalStorage = () => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+};
